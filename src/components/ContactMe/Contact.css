@@ -1,0 +1,81 @@
+.contact-me-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 220px;
+}
+
+.email-path{
+    fill: white;
+}
+
+.email-p, .linkedin-p-contact-me{
+    font-size: 19px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.contact-me{
+    width: 490px;
+    padding: 20px;
+    border: 2px solid rgb(134, 126, 126);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.contact-me-email, .contact-me-linkedin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.email-icon-container{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .contact-me{
+        width: 400px;
+    }
+
+    .email-p, .linkedin-p-contact-me{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact-me {
+        width: 300px;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .email-p,
+    .linkedin-p-contact-me {
+        font-size: 14px;
+    }
+
+    .email-icon-container svg{
+        width: 15px;
+        height: 15px;
+    }
+
+    .email-icon-container{
+        width: 30px;
+        height: 30px;
+    }
+}

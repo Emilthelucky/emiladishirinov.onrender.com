@@ -1,0 +1,204 @@
+.about-me-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 196px;
+    height: 550px;
+}
+
+.about-me-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.p-about{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: rgb(85, 85, 85);
+    text-align: center;
+}
+
+.h1-about{
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.about-me-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me-image-container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 40px;
+}
+
+.about-me-img{
+    width: 100%;
+}
+
+.about-me-passage{
+    width: 700px;
+    margin-top: 25px;
+}
+
+.about-me-exp, .about-me-educ{
+    width: 350px;
+    min-height: 100px;
+    border: 2px solid rgb(164, 162, 162);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.about-me-exp-educ{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 730px;
+}
+
+.about-me-exp-educ-passage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.about-me-p{
+    font-size: 17px;
+    color: #555555;
+    font-family: "DM Sans", sans-serif;
+    line-height: 24px;
+}
+
+.path-exp, .path-educ{
+    fill: black;
+}
+
+.experience-p, .education-p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.17rem;
+    font-weight: bold;
+    letter-spacing: -0.7px;
+    margin: 3px;
+    line-height: 35px;
+}
+
+.experience-paragraph, .education-paragraph{
+    font-family: "DM Sans", sans-serif;
+    color: rgb(85, 85, 85);
+    width: 200px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+@media (max-width: 1250px) {
+    .about-me-image-container{
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-me-exp-educ{
+        width: 600px;
+    }
+
+    .about-me-exp, .about-me-educ{
+        width: 290px;
+    }
+
+    .about-me-passage{
+        width: 600px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-me-exp, .about-me-educ{
+        width: 240px;
+    }
+
+    .about-me-exp-educ{
+        width: 500px;
+    }
+
+    .about-me-passage{
+        width: 500px;
+    }
+
+    .about-me-image-container{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 850px) {
+    .about-me-main-container{
+        flex-direction: column;
+    }
+
+    .about-me-image-container{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .about-me-passage{
+        text-align: center;
+    }
+
+    .about-me-p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-me-exp-educ{
+        flex-direction: column;
+    }
+
+    .about-me-exp, .about-me-educ{
+        width: 400px;
+        margin: 10px;
+    }
+
+    .experience-paragraph, .education-paragraph{
+        width: 400px;
+    }
+
+    .about-me-passage{
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+    .about-me-exp, .about-me-educ{
+        width: 300px;
+    }
+
+    .experience-paragraph, .education-paragraph{
+        width: 250px;
+    }
+
+    .about-me-passage{
+        width: 250px;
+    }
+}

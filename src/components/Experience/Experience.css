@@ -1,0 +1,188 @@
+.my-experience-main {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.my-experience-front-back {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    width: 80%;
+}
+
+.front,
+.back {
+    padding: 2rem;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(163, 163, 163) 0.1rem solid;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+}
+
+.front-title {
+    font-size: 32px;
+    color: #555;
+    font-family: "Poppins", sans-serif;
+}
+
+.front-technologies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+.technology {
+    display: flex;
+    align-items: center;
+    /* Ensure vertical alignment */
+    justify-content: start;
+    /* Align to the start */
+}
+
+.checkmark-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.checkmark-path {
+    fill: black;
+}
+
+.tech-main {
+    display: flex;
+    align-items: start;
+    /* Ensure vertical alignment */
+    flex-direction: column;
+}
+
+.tech-name {
+    font-size: 18.72px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    /* Consistent line height */
+}
+
+.tech-level {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #555;
+    line-height: 1.2;
+    /* Consistent line height */
+}
+
+@media (max-width: 1400px) {
+    .my-experience-front-back{
+        width: 1220px;
+    }
+
+    .front, .back{
+        width: 590px; 
+    }
+
+    .front-technologies{
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .my-experience-front-back{
+        width: 1000px;
+    }
+
+    .front, .back{
+        width: 490px;
+    }
+
+    .front-technologies{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .my-experience-front-back{
+        flex-direction: column;
+        width: 700px;
+    }
+
+    .front, .back{
+        width: 650px;
+    }
+
+    .front-technologies{
+        margin-left: 120px;
+    }
+}
+
+@media (600px <= width <= 850px) {
+    .my-experience-main{
+        margin-top: 300px;
+    }
+}
+
+@media (450px <=width <=600px) {
+    .my-experience-main {
+        margin-top: 550px;
+    }
+}
+
+@media (0px <=width <=450px) {
+    .my-experience-main {
+        margin-top: 750px;
+    }
+}
+
+@media (max-width: 700px) {
+    .my-experience-front-back{
+        width: 500px;
+    }
+
+    .front, .back{
+        width: 450px;
+    }
+
+    .front-technologies{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .my-experience-front-back {
+        width: 380px;
+    }
+
+    .front,
+    .back {
+        width: 330px;
+    }
+
+    .front-technologies {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .front-title{
+        font-size: 20px;
+        width: 100%;
+    }
+}

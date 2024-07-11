@@ -1,0 +1,38 @@
+.home{
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    /* background: #999D9E; */
+    background: white;
+    height: 480vh;
+}
+
+@media (1000px <= width <= 1200px) {
+    .home{
+        height: 560vh;
+    }
+}
+
+@media (850px <= width <=1000px) {
+    .home {
+        height: 670vh;
+    }
+}
+
+@media (700px <=width <=850px) {
+    .home {
+        height: 690vh;
+    }
+}
+
+@media (400px <=width <= 750px) {
+    .home {
+        height: 720vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .home {
+        height: 780vh;
+    }
+}

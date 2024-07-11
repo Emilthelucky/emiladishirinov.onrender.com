@@ -1,0 +1,196 @@
+.profile-photo-container {
+    width: 360px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.profile {
+    width: 100%;
+}
+
+.profile-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 150px;
+    margin-inline: auto;
+    width: 800px;
+}
+
+h5 {
+    font-size: 20px;
+    color: rgb(66, 66, 66);
+}
+
+h1 {
+    font-size: 55px;
+    color: rgb(23, 23, 23);
+    margin: 10px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(86, 86, 86);
+}
+
+.main-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    margin-top: 5px;
+}
+
+.download-cv,
+.contact-info {
+    padding: 17px 22px;
+    border: 2px solid rgb(45, 45, 45);
+    background: white;
+    color: rgb(0, 0, 0);
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+}
+
+.contact-info {
+    background: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.profile-accounts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+    margin-top: 15px;
+}
+
+.linkedin {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedin-path {
+    fill: white;
+}
+
+.github {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-path {
+    fill: white;
+}
+
+@media (max-width: 1000px) {
+    .profile-photo-container{
+        width: 260px;
+        height: 250px;
+    }
+
+    .profile-container{
+        width: 700px;
+    } 
+}
+
+@media (max-width: 750px) {
+    .profile-container {
+        width: 500px;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile-container {
+        width: 400px;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .profile-photo-container{
+        width: 210px;
+        height: 200px;
+        margin: 10px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-container {
+        width: 200px;
+        margin-top: 40px;
+    }
+
+    .profile-photo-container {
+        width: 165px;
+        height: 160px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    h5{
+        font-size: 15px;
+    }
+
+    .main-buttons{
+        flex-direction: column;
+    }
+
+    .download-cv, .contact-info{
+        width: 200px;
+        margin: 5px;
+    }
+
+    .svg-hero{
+        width: 20px;
+        height: 20px;
+    }
+
+    .github, .linkedin{
+        width: 35px;
+        height: 35px;
+    }
+}
