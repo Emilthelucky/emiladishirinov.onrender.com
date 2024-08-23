@@ -1,6 +1,6 @@
 import profile from '../../assets/developer-logo.png'
 import './Profile.css'
-import pdf from '../../assets/Resume.pdf'
+import pdf from '../../assets/Current_resume.pdf'
 
 export const Profile = () => {
     const scrollToContactInfo = () => {
