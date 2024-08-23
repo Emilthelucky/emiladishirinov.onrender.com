@@ -2,21 +2,32 @@ import './Experience.css'
 
 export const Experience = () => {
     const Fronttechnologies = [
-        { name: 'React/Redux', level: 'Experienced' },
-        { name: 'Next.js', level: 'Experienced' },
+        { name: 'React', level: 'Intermediate' },
+        { name: 'Redux/Toolkit', level: 'Basic' },
+        { name: 'Context API', level: 'Experienced' },
         { name: 'Vue.js', level: 'Intermediate' },
+        { name: 'Vuex/Pinia', level: 'Intermediate' },
+        { name: 'Next.js', level: 'Basic' },
         { name: 'Typescript', level: 'Basic' },
-        { name: 'Chakra UI', level: 'Basic' },
+        { name: 'Tailwind CSS', level: 'Basic' },
+        { name: 'Chakra UI', level: 'Intermediate' },
         { name: 'Material UI', level: 'Intermediate' },
+        { name: 'Responsive', level: 'Intermediate' },
+        { name: 'Figma', level: 'Basic' },
     ]
 
     const Backtechnologies = [
         { name: 'Node.js', level: 'Experienced' },
         { name: 'Express.js', level: 'Experienced' },
-        { name: 'MongoDB', level: 'Intermediate' },
-        { name: 'AWS', level: 'Basic' },
+        { name: 'MongoDB', level: 'Experienced' },
+        { name: 'MYSql', level: 'Basic' },
+        { name: 'PostgreSql', level: 'Basic' },
+        { name: 'Redis', level: 'Basic' },
+        { name: 'Docker', level: 'Enthusiast' },
         { name: 'Git/GitHub', level: 'Basic' },
+        { name: 'CI/CD GitHub', level: 'Basic' },
         { name: 'Typescript', level: 'Intermediate' },
+        { name: 'AWS', level: 'Enthusiast' },
     ]
 
     return (

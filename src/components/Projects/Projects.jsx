@@ -2,6 +2,9 @@ import './Projects.css'
 import imdb from '../../assets/imdb.png'
 import amu from '../../assets/amu-main.png'
 import restapi from '../../assets/rest-api.png'
+import finance from '../../assets/finance.png'
+import blog from '../../assets/blog.png'
+import chat from '../../assets/chat.png'
 
 export const Projects = () => {
     const projects = [
@@ -9,7 +12,7 @@ export const Projects = () => {
             title: 'AMU Imtahan',
             image: amu,
             githubLink: 'https://github.com/Emilthelucky/amu-pdfimtahani',
-            liveDemoLink: 'https://amu-pdfimtahani.onrender.com',
+            // liveDemoLink: 'https://amu-pdfimtahani.onrender.com',
         },
         {
             title: 'Simple RESTful API',
@@ -22,6 +25,24 @@ export const Projects = () => {
             image: imdb,
             githubLink:
                 'https://github.com/Emilthelucky/imdb-pagination-search',
+            // liveDemoLink: 'https://your-live-demo/project-3',
+        },
+        {
+            title: 'Finance System',
+            image: finance,
+            githubLink: 'https://github.com/Emilthelucky/finance-client-int2',
+            // liveDemoLink: 'https://your-live-demo/project-3',
+        },
+        {
+            title: 'Tech Blog',
+            image: blog,
+            githubLink: 'https://github.com/Emilthelucky/blog_client',
+            // liveDemoLink: 'https://your-live-demo/project-3',
+        },
+        {
+            title: 'Socket.io ChatApp',
+            image: chat,
+            githubLink: 'https://github.com/Emilthelucky/chat-app-socketio-api',
             // liveDemoLink: 'https://your-live-demo/project-3',
         },
     ]

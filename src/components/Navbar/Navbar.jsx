@@ -4,6 +4,19 @@ import './Navbar.css'
 export const Navbar = () => {
     const [showTabs, setShowTabs] = useState(false)
 
+    const scrollToContactInfo = () => {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth',
+        })
+    }
+
+    const scrollToAbout = () => {
+        const isMobile = window.innerWidth < 768
+        const scrollPosition = isMobile ? 780 : 750
+        window.scrollTo({ top: scrollPosition, behavior: 'smooth' })
+    }
+
     return (
         <nav className="navbar">
             <div className="navbar-logo">
@@ -15,9 +28,16 @@ export const Navbar = () => {
                 </div>
             </div>
             <div className="tabs">
-                <button className="tab">Home</button>
-                <button className="tab">Contact</button>
-                <button className="tab">About</button>
+                <button className="tab pointer">Home</button>
+                <button
+                    className="tab pointer"
+                    onClick={() => scrollToContactInfo()}
+                >
+                    Contact
+                </button>
+                <button className="tab pointer" onClick={() => scrollToAbout()}>
+                    About
+                </button>
             </div>
             <button
                 className="toggle-btn"
@@ -33,9 +53,19 @@ export const Navbar = () => {
                 </svg>
             </button>
             <div className={`tabs-dropdown ${showTabs ? 'show' : ''}`}>
-                <button className="tab-drop">Home</button>
-                <button className="tab-drop">Contact</button>
-                <button className="tab-drop">About</button>
+                <button className="tab-drop pointer">Home</button>
+                <button
+                    className="tab-drop pointer"
+                    onClick={() => scrollToContactInfo()}
+                >
+                    Contact
+                </button>
+                <button
+                    className="tab-drop pointer"
+                    onClick={() => scrollToAbout()}
+                >
+                    About
+                </button>
             </div>
         </nav>
     )

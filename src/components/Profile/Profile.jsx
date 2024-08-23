@@ -4,7 +4,7 @@ import pdf from '../../assets/Resume.pdf'
 
 export const Profile = () => {
     const scrollToContactInfo = () => {
-        window.scrollTo({ top: 3000, behavior: 'smooth' })
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
     }
 
     return (
